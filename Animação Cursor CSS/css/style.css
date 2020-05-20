@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background-color: rgba(25, 25, 25);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.line {
+    border-right: 2px solid rgba(225, 225, 225, 0.75);
+    color: rgba(225, 225, 225, 0.75);
+    font-family: 'Fira Code', monospace;
+    font-style: 8em;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typingCursor {
+    animation: animacaoCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 18em;
+    }
+}
+
+@keyframes animacaoCursor {
+    from {
+        border-right-color: rgba(225, 225, 225, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
